@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allyson's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="spinner" id="spinner"></div>
+
+  <div class="container">
+    <header class="header">
+      <h1>Allyson Wiedoff</h1>
+      <h2>My dreams are to live comfortably, and not worry about money.</h2>
+    </header>
+
+    <nav class="sidebar">
+      <ul id="nav-list"> 
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="resume"><a href="Allyson Wiedoff Current Resume.docx" download>Download Resume</a></button>
+      <p id="downloadCount">Resume downloaded: 0 times</p>
+  </nav>
+
+    <main class="content">
+      <section id="summary">
+        <h3>Summary</h3>
+        <div id="greeting"></div>
+        <p>Hi, my name is Ally, and I am passionate about computers, coding, and video games. I have experience using coding software and working at cafes!</p>
+        <img src="allyson.jpg" alt="My Profile" class="profile-pic">
+      </section>
+
+      <section id="skills">
+        <h3>Skills</h3>
+        <input type="text" id="skill-input" placeholder="Enter a new skill">
+        <button id="add-skill">Add Skill</button>
+        <input type="text" id="skillSearch" placeholder="Search skills...">
+        <ul id="skills-list">
+          <li>Barista Experience</li>
+          <li>POS System Skills</li>
+          <li>Public Speaking</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h3>Projects</h3>
+        <div id="projects-container" class="projects-grid"></div>
+        <button id="sort-projects">Sort Projects by Deadline</button>
+        
+          <div class="project">
+            <h4>My First Website</h4>
+            <p>Creating a simple webpage!</p>
+            <p>Status: Ongoing</p>
+          </div>
+          <div class="project">
+            <h4>Learning Web Design</h4>
+            <p>Learning design through practice.</p>
+            <p>Status: Completed</p>
+          </div>
+          <div class="project">
+            <h4>Writing an Essay</h4>
+            <p>Currently writing a project for my Engineering class.</p>
+            <p>Status: Ongoing</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h3>Education</h3>
+        <table id="education-table">
+          <tr>
+            <th>School</th>
+            <th>Degree</th>
+            <th>Year</th>
+          </tr>
+        </table>
+      </section>
+
+      <section id="experience">
+        <h3>Experience</h3>
+        <table id="experience-table">
+          <tr>
+            <th>Workplace</th>
+            <th>Skills</th>
+            <th>Year</th>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <h3>Contact me!</h3>
+      <p>Email: <a href="mailto:aaw399@nau.edu">aaw399@nau.edu</a></p>
+      <p>Phone: +1(623)258-8321</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/wiedoff-allyson/">Allyson Wiedoff</a></p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
